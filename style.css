@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'maruburi';
+    src: url('./resource/MaruBuri-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('./resource/NanumMyeongjoBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'nanum-square';
+    src: url('./resource/NanumSquareNeoTTF-bRg.woff2') format('woff2');
+}
+
+.material-symbols-outlined {
+	font-size:12pt !important;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 1.0em;
+}
+
+.icon_section {
+    font-size: 20pt;
+    color: #f1c0c6;
+    font-weight: 900;
+    margin: 30px 0px;
+}
+
+.main_title {
+    font-family: 'maruburi';
+    font-size: 20pt;
+}
+
+.main_comment {
+    font-family: 'nanum-square';
+    font-size: 0.8em;
+    margin: 1em;
+}
+
+.main_img {
+    width: 100%;
+}
+
+.tell_icon {
+    display: inline-block;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18pt; 
+    text-decoration-line: none;
+    margin: 0px 2px;
+    background-color: #ffa0d4;
+}
+
+.sms_icon {
+    display: inline-block;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18pt;
+    text-decoration-line: none;
+    margin: 0px 2px;
+    background-color: #009fff;
+}
+
+.call_background {
+    font-family: 'nanum-square';
+    font-size: 0.8em;
+    margin: 0.5em 0em;
+}
+
+.map_btn {
+    display: flex;
+    text-decoration-line: none;
+    color:white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nanum-square';
+    font-weight: 900;
+}
+
+.sub_title {
+    color: #3f4d64;
+    font-size: 20pt;
+    font-family: 'NanumMyeongjo';
+    margin: 35px 0px;
+}
+
+.contents_section {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+}
+
+.pay-contents {
+    font-family: 'nanum-square';
+    font-size: 0.8em;
+}
+
+.contents_box {
+    margin: 2em;
+}
+
+.middle_title {
+    font-family: 'nanum-square';
+    font-weight: 900;
+    color: #3f4d64;
+    margin: 10px 0px;
+}
+
+.content_style {
+    color:#4b4b4b;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+.info_contents {
+    font-family: 'maruburi';
+    font-size: 1.2em;
+}
+
+.endding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: white;
+    font-family: 'maruburi';
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.7em;
+}
+.endding_cover {
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.endding_frame {
+    position: relative;
+}
+
+.game_btn {
+    background-color: #f1c0c6;
+    padding: 0.5em;
+    margin: 2em 0em;
+}
+
+.game_btn_text {
+    color: white;
+    text-decoration-line: none;
+    font-family: 'nanum-square';
+}
+
+/* 아코디언메뉴 */
+details > summary { 
+    font-family: 'nanum-square';
+    background:#f1c0c6; 
+    color:#fff; 
+    padding: 10px 35px;
+    outline:0; 
+    cursor:pointer; 
+    transition:background 0.5s; 
+    text-align:left; 
+    display: block;
+}
+
+details[open] > summary ~ * { 
+    animation:reveal 0.5s;
+}
+
+summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
+    display: none;
+}
+summary {
+    display: block; /* 그 외의 브라우저용 사용자 정의 스타일 */
+}
+
+.tpt { 
+    font-family: 'nanum-square';
+    padding: 2em;
+    line-height:30px; 
+}
+
+@keyframes reveal {
+    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    to { opacity:1; transform:translate3d(0, 0, 0); }
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+.calendar {
+	background: #f1f1f1;
+	height: 550px;
+    perspective: 600;
+	transition: .9s;
+	width: 100%;
+}
+
+/* Front - Calendar */
+
+.current-date {
+	border-bottom: 1px solid #f1c0c6;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px;
+}
+.current-month {
+    height: 100%;
+}
+
+
+.current-date h1 {
+	color: #f1f1f1;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.week-days {
+	color: #3f4d64;
+	font-family: 'NanumMyeongjo';
+    margin-top: 1.2em;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.weeks {
+	color: #3f4d64;
+	display: flex;
+	flex-direction: column;
+	padding: 0 40px;
+
+}
+
+.weeks div {
+	display: flex;
+	font-size: 1.2em;
+	font-weight: 300;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.last-month {
+	opacity: .3;
+}
+
+.weeks span {
+	padding: 10px;
+    width: 26px;
+}
+
+.weeks span.active {
+	background: #f1c0c6;
+	border-radius: 50%;
+    color: white;
+    font-weight: bold;
+}
